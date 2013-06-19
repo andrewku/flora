@@ -237,7 +237,7 @@
               </li>
               <li class="empty_button"></li>
             </ul>
-            <div class="nav_log_container"style="display: inline-block;">
+            <div style="display: inline-block;">
               <a  class="nav_login"> <!--href="personPage.html"-->
               	<img src="首頁元件/NavBarLogin/NavLogin.png" title="" alt=""></a>
             <div>
@@ -406,14 +406,14 @@
 
             callFBapi();
 
-        	});
+        	alert("success");});
 
         $('.nav_login').click(function(){ 
             
 
             callFBapi();
 
-        	});
+        	alert("success");});
 
         function callFBapi(){  
 
@@ -428,14 +428,6 @@
 				accessToken = response.authResponse.accessToken;
 				
 				console.log("ok1");
-				
-			    FB.api('/me', function(response){
-			    var fId = response['id'];
-		        var fName = response['name']
-		        $("<a class = "login_replace" href="personPage.html"><img src="首頁元件/NavBarLogin/NavLogin.png" title="" alt="">><img src='https://graph.facebook.com/"+ fId + "/picture' / class= "imgsize"><span>"Hi"</span><span>"+fName+"</span></a>").appendTo("#nav_log_container");}
-
-		   
-
 				//FB.logout(function(response) {
   					
 				//});
@@ -466,18 +458,11 @@
 					//	$('#welcome').html("Welcome! " + userName);
 					//});
 				    console.log("ok2");
-
-				     FB.api('/me', function(response){
-			         var fId = response['id'];
-		               var fName = response['name']
-		             $("<a class = "login_replace" href="personPage.html"><img src="首頁元件/NavBarLogin/NavLogin.png" title="" alt="">><img src='https://graph.facebook.com/"+ fId + "/picture' / class= "imgsize"><span>"Hi"</span><span>"+fName+"</span></a>").appendTo("#nav_log_container");}
-
-		   
 					 
 				   } else {
 					 
 					 //ä½¿ç”¨è€…æ‹’çµ•ç™»å…¥ï¼Œbuttonä¸€æ¨£æ˜¯login
-					alert("登入同時授權才能收藏花朵喔！");
+					alert("Please authenticate this application, or you will not be able to create the new lego of your own!");
 					 
 				   }
 				 });
@@ -499,17 +484,11 @@
 					//	userName = response.name;
 					//	$('#welcome').html("Welcome! " + userName);
 					//});
-				      FB.api('/me', function(response){
-			          var fId = response['id'];
-		               var fName = response['name']
-		               $("<a class = "login_replace" href="personPage.html"><img src="首頁元件/NavBarLogin/NavLogin.png" title="" alt="">><img src='https://graph.facebook.com/"+ fId + "/picture' / class= "imgsize"><span>"Hi"</span><span>"+fName+"</span></a>").appendTo("#nav_log_container");}
-
-		   
 					 console.log("ok3");
 				   } else {
 					 
 					//ä½¿ç”¨è€…æ‹’çµ•ç™»å…¥ï¼Œbuttonä¸€æ¨£æ˜¯login
-					alert("登入同時授權才能收藏花朵喔！");
+					alert("Please log in to Facebook, or you will not be able to create the new lego of your own!");
 					 
 				   }
 				 });
