@@ -431,7 +431,7 @@
 				console.log("ok1");
 				$('#loginButton').remove();
 
-			   FB.api('/me', function(response){
+			   /*FB.api('/me', function(response){
 
 			    	var fId = response.id;
 		             var fName = response.name;
@@ -440,9 +440,9 @@
                     	<span>Hi</span>
                     	<span>"+fName+"</span>").appendTo('#nav_log_container')
 
-                    //<a href='personPage.html'> </a>
+                    <a href='personPage.html'> </a>
 
-		              ;});
+		              ;});*/
 
 
 		   
@@ -479,7 +479,7 @@
 				    console.log("ok2");
 				    $('#loginButton').remove();
 
-				    FB.api('/me', function(response){
+				    /*FB.api('/me', function(response){
 
 			    	var fId = response.id;
 		             var fName = response.name;
@@ -490,7 +490,7 @@
 
                     //<a href='personPage.html'> </a>
 
-		              ;});
+		              ;});*/
 		   
 					 
 				   } else {
@@ -520,18 +520,18 @@
 					//});
 				      $('#loginButton').remove();
 
-				     FB.api('/me', function(response){
+				     /*FB.api('/me', function(response){
 
 			    	var fId = response.id;
 		             var fName = response.name;
 		                
-                    $("<img src='https://graph.facebook.com/"+ fId + "/picture'/>
+                    $("<a class="now_log" href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/ class"imgSize">
                     	<span>Hi</span>
-                    	<span>"+fName+"</span>").appendTo('#nav_log_container')
+                    	<span>"+fName+"</span></a>").appendTo('#nav_log_container')
 
-                    //<a href='personPage.html'> </a>
+                    // 
 
-		              ;});
+		              ;});*/
 		   
 					 console.log("ok3");
 				   } else {
