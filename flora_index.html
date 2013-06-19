@@ -431,13 +431,13 @@
 				console.log("ok1");
 				$('#loginButton').remove();
 
-			   FB.api('/me', function(response){
+			      FB.api('/me', function(response){
 
 			    	 var fId = response.id;
 		             var fName = response.name;
 		                
-                    $("<img src='https://graph.facebook.com/"+ fId + "/picture'/>
-                    	<span>"+fName+"</span>").appendTo('.nav_log_container')
+                    $("<div><img src='https://graph.facebook.com/"+ fId +"/picture'/>
+                    	<span>"+fName+"</span></div>").appendTo('.nav_log_container')
 
                     //<a href='personPage.html'> </a>
 
