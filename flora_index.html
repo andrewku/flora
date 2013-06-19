@@ -432,7 +432,7 @@
 		
 			if (response.status === 'connected') {
 				
-			
+				//å¦‚æžœå·²ç¶“æŽˆæ¬Šè€Œä¸”ç™»å…¥ï¼Œé‚£å°±ç›´æŽ¥æŠŠ#loginButtonæ”¹æˆlogoutç‹€æ…‹
 				uid = response.authResponse.userID;
 				accessToken = response.authResponse.accessToken;
 				
@@ -502,7 +502,7 @@
 				    $('.loginButton').remove();
 				    $('.login_ornot').text("最新收藏");
 
-			      FB.api('/me', function(response){
+				    FB.api('/me', function(response){
 
 			    	 var fId = response.id;
 		             var fName = response.name;
@@ -513,6 +513,7 @@
 		              $("#pic1").append("<a href='personPage.html'><img src='andrewadd/f1.png'/></a>");
 		              $("#pic2").append("<a href='personPage.html'><img src='andrewadd/f2.png'/></a>");
 		              $("#pic3").append("<a href='personPage.html'><img src='andrewadd/f3.png'/></a>");
+                    
                     
                     //<a href='personPage.html'> </a>
                     //<img src='https://graph.facebook.com/"+ fId + "/picture' />
@@ -538,10 +539,6 @@
 				   if (response.authResponse) {
 					 
 					 //ä½¿ç”¨è€…å·²ç¶“ç™»å…¥æŽˆæ¬Šï¼Œæ”¹è®Šbutton
-					//$("#loginButton").html('Facebook Logout');
-					//$("#loginButton").removeClass('btn-primary').addClass('btn-inverse');
-					
-					//var userName;
 					$('#lbutton_wrap').remove();
 				    $('.nav_login').remove();
 				    $('#apiIcon').remove();
@@ -549,7 +546,7 @@
 				    $('.loginButton').remove();
 				    $('.login_ornot').text("最新收藏");
 
-			      FB.api('/me', function(response){
+				    FB.api('/me', function(response){
 
 			    	 var fId = response.id;
 		             var fName = response.name;
@@ -560,6 +557,9 @@
 		              $("#pic1").append("<a href='personPage.html'><img src='andrewadd/f1.png'/></a>");
 		              $("#pic2").append("<a href='personPage.html'><img src='andrewadd/f2.png'/></a>");
 		              $("#pic3").append("<a href='personPage.html'><img src='andrewadd/f3.png'/></a>");
+                    
+                    
+                    
                     //
                     //<a href='personPage.html'> </a>
                     //<img src='https://graph.facebook.com/"+ fId + "/picture' />
