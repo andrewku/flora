@@ -480,26 +480,21 @@
 					
 					//var userName;
 				
-					//FB.api('/me', function(response) {
-					//	userName = response.name;
-					//	$('#welcome').html("Welcome! " + userName);
-					//});
-				    console.log("ok2");
-				    $('#loginButton').remove();
-				    $('.nav_login').remove();
+					FB.api('/me', function(response){
 
-				    /*FB.api('/me', function(response){
-
-			    	var fId = response.id;
+			    	 var fId = response.id;
 		             var fName = response.name;
-
-                    $("<img src='https://graph.facebook.com/"+ fId + "/picture'/>
-                    	<span>Hi</span>
-                    	<span>"+fName+"</span>").appendTo('#nav_log_container')
-
+		         
+		             
+		             $(".nav_log_container").append("<a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture' width:'200%' height:'200%' /></a>");
+                     $(".nav_log_container").append("<div style='font-size: 50x; margin-top: 50px; padding-left: 20px;'><a href='personPage.html'><span>"+fName+"</span></a></div>");
+                    
                     //<a href='personPage.html'> </a>
+                    //<img src='https://graph.facebook.com/"+ fId + "/picture' />
 
-		              ;});*/
+
+		              });
+
 		   
 					 
 				   } else {
@@ -523,25 +518,21 @@
 					
 					//var userName;
 				
-					//FB.api('/me', function(response) {
-					//	userName = response.name;
-					//	$('#welcome').html("Welcome! " + userName);
-					//});
-				       $('#loginButton').remove();
-				       $('.nav_login').remove();
+					FB.api('/me', function(response){
 
-				     /*FB.api('/me', function(response){
-
-			    	var fId = response.id;
+			    	 var fId = response.id;
 		             var fName = response.name;
-		                
-                    $("<a class="now_log" href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/ class"imgSize">
-                    	<span>Hi</span>
-                    	<span>"+fName+"</span></a>").appendTo('#nav_log_container')
+		         
+		             
+		             //$(".nav_log_container").append("<a href='personPage.html'></a>");
+                     $(".nav_log_container").append("<div style=' margin-top: 50px; padding-left: 20px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture' width:'50px' height:'50px' /><span style= 'font-size: 50px; text-decoration:none;'>"+fName+"</span></a></div>");
+                    
+                    //<a href='personPage.html'> </a>
+                    //<img src='https://graph.facebook.com/"+ fId + "/picture' />
 
-                    // 
 
-		              ;});*/
+		              });
+
 		   
 					 console.log("ok3");
 				   } else {
