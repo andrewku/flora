@@ -437,21 +437,13 @@
 			    	 var fId = response.id;
 		             var fName = response.name;
 		         
-                     $(".nav_log_container").append("<div class="new_nav">
+                     $(".nav_log_container").append("<div>
                      	
-                     	<span style="font-size:40px; margin-top: 50px;">"+fName+"</span></div>")
+                     	<img src= 'https://graph.facebook.com/"+ fId+"/picture' width='200%' height='200%'/>
+                     	<span>"+fName+"</span></div>")
                     //<a href='personPage.html'> </a>
 
-		              ;
-
-		              $(".nav_log_container").append($("<a>", 
-                       {
-                          href: "#", 
-                          html: $("<img>", { src: "https://graph.facebook.com/" +fId+ "/picture" })
-                               }));
-
-
-		          });
+		              ;});
 
 
 		   
