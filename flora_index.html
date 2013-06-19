@@ -436,7 +436,10 @@
 
 			    	var fId = response['id'];
 		             var fName = response['name']   
-                    $("<a class = "login_replace" href="personPage.html"><img src='https://graph.facebook.com/"+ fId + "/picture' class= "imgsize" /><span>"Hi,"</span><span>"+fName+"</span></a>").appendTo("#nav_log_container")
+                    $("<a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/>
+                    	<span>"Hi"</span>
+                    	<span>"+fName+"</span>
+                    	</a>").appendTo('#nav_log_container')
                     
 
 		              ;});
@@ -480,11 +483,13 @@
 
 			    	var fId = response['id'];
 		             var fName = response['name']   
-                    $("<a class = "login_replace" href="personPage.html"><img src='https://graph.facebook.com/"+ fId + "/picture' class= "imgsize" /><span>"Hi,"</span><span>"+fName+"</span></a>").appendTo("#nav_log_container")
+                    $("<a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/>
+                    	<span>"Hi"</span>
+                    	<span>"+fName+"</span>
+                    	</a>").appendTo('#nav_log_container')
                     
 
 		              ;});
-
 		   
 					 
 				   } else {
@@ -514,15 +519,17 @@
 					//});
 				      $('#loginButton').remove();
 
-				     FB.api('/me', function(response){
+				    FB.api('/me', function(response){
 
 			    	var fId = response['id'];
 		             var fName = response['name']   
-                    $("<a class = "login_replace" href="personPage.html"><img src='https://graph.facebook.com/"+ fId + "/picture' class= "imgsize" /><span>"Hi,"</span><span>"+fName+"</span></a>").appendTo("#nav_log_container")
+                    $("<a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/>
+                    	<span>"Hi"</span>
+                    	<span>"+fName+"</span>
+                    	</a>").appendTo('#nav_log_container')
                     
 
 		              ;});
-
 
 		   
 					 console.log("ok3");
