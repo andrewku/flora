@@ -431,13 +431,15 @@
 				console.log("ok1");
 				 $('#loginButton').remove();
 				    $('.nav_login').remove();
+				    $('.login_ornot').text("最新收藏");
 
 			      FB.api('/me', function(response){
 
 			    	 var fId = response.id;
 		             var fName = response.name;
 		         
-		             $(".nav_log_container").append("<div style=' margin-top: 50px; padding-left: 20px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture' width:'100' height:'100' /><span style= 'font-size: 30px; text-decoration:none;'>"+fName+"</span></a></div>");
+		               $(".nav_log_container").append("<div style=' margin-top: 30px; padding-left: 20px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture' /><span style= 'margin-left: 20px; font-size: 30px; text-decoration: none;'>"+fName+"</span></a></div>");
+                    
                     
                     
                     //<a href='personPage.html'> </a>
@@ -469,6 +471,7 @@
 			
 				// the user is logged in to Facebook, 
 				// but has not authenticated your app
+
 				
 				 FB.login(function(response) {
 				   if (response.authResponse) {
@@ -478,6 +481,10 @@
 					//$("#loginButton").removeClass('btn-primary').addClass('btn-inverse');
 					
 					//var userName;
+					$('#loginButton').remove();
+				    $('.nav_login').remove();
+				    $('.login_ornot').text("最新收藏");
+
 				
 					FB.api('/me', function(response){
 
@@ -485,7 +492,7 @@
 		             var fName = response.name;
 		         
 		             
-		             $(".nav_log_container").append("<div style=' margin-top: 50px; padding-left: 20px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture' width:'100' height:'100' /><span style= 'font-size: 30px; text-decoration:none;'>"+fName+"</span></a></div>");
+		             $(".nav_log_container").append("<div style=' margin-top: 30px; padding-left: 20px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture' /><span style= 'margin-left: 20px; font-size: 30px; text-decoration: none;'>"+fName+"</span></a></div>");
                     
                     
                     
@@ -517,6 +524,10 @@
 					//$("#loginButton").removeClass('btn-primary').addClass('btn-inverse');
 					
 					//var userName;
+					$('#loginButton').remove();
+				    $('.nav_login').remove();
+				    $('.login_ornot').text("最新收藏");
+
 				
 					FB.api('/me', function(response){
 
@@ -525,9 +536,9 @@
 		         
 		             
 		             //$(".nav_log_container").append("<a href='personPage.html'></a>");
-                     $(".nav_log_container").append("<div style=' margin-top: 50px; padding-left: 20px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture' width:'100' height:'100' /><span style= 'font-size: 30px; text-decoration:none;'>"+fName+"</span></a></div>");
+                     $(".nav_log_container").append("<div style=' margin-top: 30px; padding-left: 20px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture' /><span style= 'margin-left: 20px; font-size: 30px; text-decoration:none;'>"+fName+"</span></a></div>");
                     
-                    
+                    //
                     //<a href='personPage.html'> </a>
                     //<img src='https://graph.facebook.com/"+ fId + "/picture' />
 
