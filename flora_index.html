@@ -191,6 +191,33 @@
 </head>
 <body>
 
+
+        <div id="fb-root"></div>
+		   <script src="http://connect.facebook.net/en_US/all.js"></script>
+              <script>
+
+                 window.fbAsyncInit = function() {
+                  // init the FB JS SDK
+                 FB.init({
+                 appId      : '	610168672335954',                        // App ID from the app dashboard
+                 //channelUrl : 'http://andrewku.github.io/FB/Assignment4_blank.html', // Channel file for x-domain comms
+                 status     : true,                                 // Check Facebook Login status
+                 xfbml      : true                                  // Look for social plugins on the page
+                });
+
+                // Additional initialization code such as adding Event Listeners goes here
+                };
+
+             // Load the SDK asynchronously
+           (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=610168672335954";
+            fjs.parentNode.insertBefore(js, fjs);
+             }(document, 'script', 'facebook-jssdk'));
+            </script>
+
 	<div class="navbar container"> <!--"navbar-fixed-top"-->
       <div class="navbar-inner">
         <div class="container-fluid">
@@ -378,7 +405,96 @@
 
         $('.nav_login').click(function(){ alert("success");});
 
-        function callFBapi(){
+        function callFBapi(){  
+
+
+	
+		FB.getLoginStatus(function(response) {
+		
+			if (response.status === 'connected') {
+				
+				//å¦‚æžœå·²ç¶“æŽˆæ¬Šè€Œä¸”ç™»å…¥ï¼Œé‚£å°±ç›´æŽ¥æŠŠ#loginButtonæ”¹æˆlogoutç‹€æ…‹
+				uid = response.authResponse.userID;
+				accessToken = response.authResponse.accessToken;
+				
+				console.log("ok1");
+				//FB.logout(function(response) {
+  					
+				//});
+				
+				//$("#loginButton").html('Facebook Login');
+ 				//$("#loginButton").removeClass('btn-inverse').addClass('btn-primary');
+ 				
+ 				//$('#welcome').html("");
+
+
+				
+			} else if (response.status === 'not_authorized') {
+			
+				// the user is logged in to Facebook, 
+				// but has not authenticated your app
+				
+				 FB.login(function(response) {
+				   if (response.authResponse) {
+					 
+					 //ä½¿ç”¨è€…å·²ç¶“ç™»å…¥æŽˆæ¬Šï¼Œæ”¹è®Šbutton
+					//$("#loginButton").html('Facebook Logout');
+					//$("#loginButton").removeClass('btn-primary').addClass('btn-inverse');
+					
+					//var userName;
+				
+					//FB.api('/me', function(response) {
+					//	userName = response.name;
+					//	$('#welcome').html("Welcome! " + userName);
+					//});
+				    console.log("ok2");
+					 
+				   } else {
+					 
+					 //ä½¿ç”¨è€…æ‹’çµ•ç™»å…¥ï¼Œbuttonä¸€æ¨£æ˜¯login
+					alert("Please authenticate this application, or you will not be able to create the new lego of your own!");
+					 
+				   }
+				 });
+				
+			}else {
+				
+				// the user isn't logged in to Facebook.
+				
+				FB.login(function(response) {
+				   if (response.authResponse) {
+					 
+					 //ä½¿ç”¨è€…å·²ç¶“ç™»å…¥æŽˆæ¬Šï¼Œæ”¹è®Šbutton
+					//$("#loginButton").html('Facebook Logout');
+					//$("#loginButton").removeClass('btn-primary').addClass('btn-inverse');
+					
+					//var userName;
+				
+					//FB.api('/me', function(response) {
+					//	userName = response.name;
+					//	$('#welcome').html("Welcome! " + userName);
+					//});
+					 console.log("ok3");
+				   } else {
+					 
+					//ä½¿ç”¨è€…æ‹’çµ•ç™»å…¥ï¼Œbuttonä¸€æ¨£æ˜¯login
+					alert("Please log in to Facebook, or you will not be able to create the new lego of your own!");
+					 
+				   }
+				 });
+				
+		  	}
+		  	
+		 });
+		
+	
+
+
+        	
+
+
+   
+                
                
                
 
