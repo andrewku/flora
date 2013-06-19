@@ -359,8 +359,6 @@
 				<img id="apiIcon" src="首頁元件/fbLogin/flowerbookIcon.png" style="padding-left: 70px;">
 				<p class="login_ornot">登入花冊</p>
 				<div class = "myflower_pic"></div>
-				<div class = "myflower_pic2"></div>
-				<div class = "myflower_pic3"></div>
 				<div style="padding-top: 100px; padding-left: 70px;" class="button_wrap">
 				<button id= "loginButton">Login</button></div>
 				</a>
@@ -432,6 +430,7 @@
 				console.log("ok1");
 				 $('#loginButton').remove();
 				    $('.nav_login').remove();
+				    $('#apiIcon').remove();
 				    $('.login_ornot').text("最新收藏");
 
 			      FB.api('/me', function(response){
@@ -439,7 +438,10 @@
 			    	 var fId = response.id;
 		             var fName = response.name;
 		         
-		              $(".nav_log_container").append("<div style=' margin-top: 30px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture' style= 'width: 60px; height: 60px'/><span style= 'margin-left: 20px; font-size: 30px; text-decoration: none;'>"+fName+"</span></a></div>");
+		              $(".nav_log_container").append("<div style=' margin-top: 30px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/><span style= 'margin-left: 20px; font-size: 20px; text-decoration: none;'>"+fName+"</span></a></div>");
+                    
+
+		              $("#fbApi").append("<div class = 'myflower_pic'><a href='personPage.html'><img src='個人會員/flowerinstagram/1.png'/></a>/div><div class = 'myflower_pic'><a href='personPage.html'><img src='個人會員/flowerinstagram/3.png'/></a>/div><div class = 'myflower_pic'><a href='personPage.html'><img src='個人會員/flowerinstagram/5.png'/></a>/div>");
                     
                     
                     //<a href='personPage.html'> </a>
@@ -492,7 +494,7 @@
 		             var fName = response.name;
 		         
 		             
-		             $(".nav_log_container").append("<div style=' margin-top: 30px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture' style= 'width: 60px; height: 60px'/><span style= 'margin-left: 20px; font-size: 30px; text-decoration: none;'>"+fName+"</span></a></div>");
+		             $(".nav_log_container").append("<div style=' margin-top: 30px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/><span style= 'margin-left: 20px; font-size: 20px; text-decoration: none;'>"+fName+"</span></a></div>");
                     
                     
                     
@@ -536,7 +538,8 @@
 		         
 		             
 		             //$(".nav_log_container").append("<a href='personPage.html'></a>");
-                     $(".nav_log_container").append("<div style=' margin-top: 30px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture' style= 'width: 60px; height: 60px'/><span style= 'margin-left: 20px; font-size: 30px; text-decoration: none;'>"+fName+"</span></a></div>");
+                     $(".nav_log_container").append("<div style=' margin-top: 30px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/><span style= 'margin-left: 20px; font-size: 20px; text-decoration: none;'>"+fName+"</span></a></div>");
+                    
                     
                     
                     //
