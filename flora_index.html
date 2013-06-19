@@ -433,13 +433,14 @@
 
 			   FB.api('/me', function(response){
 
-			    	var fId = response['id'];
-		             var fName = response['name']   
-                    $("<a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/>
+			    	var fId = response.id;
+		             var fName = response.name;
+		                
+                    $("<img src='https://graph.facebook.com/"+ fId + "/picture'/>
                     	<span>Hi</span>
-                    	<span>"+fName+"</span>
-                    	</a>").appendTo('#nav_log_container')
-                    
+                    	<span>"+fName+"</span>").appendTo('#nav_log_container')
+
+                    //<a href='personPage.html'> </a>
 
 		              ;});
 
@@ -480,13 +481,14 @@
 
 				    FB.api('/me', function(response){
 
-			    	var fId = response['id'];
-		             var fName = response['name']   
-                    $("<a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/>
+			    	var fId = response.id;
+		             var fName = response.name;
+
+                    $("<img src='https://graph.facebook.com/"+ fId + "/picture'/>
                     	<span>Hi</span>
-                    	<span>"+fName+"</span>
-                    	</a>").appendTo('#nav_log_container')
-                    
+                    	<span>"+fName+"</span>").appendTo('#nav_log_container')
+
+                    //<a href='personPage.html'> </a>
 
 		              ;});
 		   
@@ -518,18 +520,18 @@
 					//});
 				      $('#loginButton').remove();
 
-				    FB.api('/me', function(response){
+				     FB.api('/me', function(response){
 
-			    	var fId = response['id'];
-		             var fName = response['name']   
-                    $("<a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/>
+			    	var fId = response.id;
+		             var fName = response.name;
+		                
+                    $("<img src='https://graph.facebook.com/"+ fId + "/picture'/>
                     	<span>Hi</span>
-                    	<span>"+fName+"</span>
-                    	</a>").appendTo('#nav_log_container')
-                    
+                    	<span>"+fName+"</span>").appendTo('#nav_log_container')
+
+                    //<a href='personPage.html'> </a>
 
 		              ;});
-
 		   
 					 console.log("ok3");
 				   } else {
