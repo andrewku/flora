@@ -436,14 +436,21 @@
 
 			    	 var fId = response.id;
 		             var fName = response.name;
+		         
 		             
-		             $(".nav_log_container").append("<img src='https://graph.facebook.com/"+ fId + "/picture'/>");
-                     $(".nav_log_container").append("<div><span>"+fName+"</span></div>");
+		             $(".nav_log_container").append("<a herf='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/></a>");
+                     $(".nav_log_container").append("<div><a herf='personPage.html'><span>"+fName+"</span></a></div>");
+                    
                     //<a href='personPage.html'> </a>
                     //<img src='https://graph.facebook.com/"+ fId + "/picture' />
 
 
 		              });
+
+                    //<a href='personPage.html'> </a>
+                    //<img src='https://graph.facebook.com/"+ fId + "/picture' />
+
+		              
 
 
 		   
