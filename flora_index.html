@@ -157,8 +157,8 @@
 
 .myflower_pic {
       	
-        padding-left: 70px;
-        padding-top: 15px;
+        padding-left: 85px;
+        padding-top: 30px;
 
       }
 
@@ -369,7 +369,7 @@
 				<div class = "myflower_pic" id="pic2"></div>
 				<div class = "myflower_pic" id="pic3"></div>
 				<div style="padding-top: 100px; padding-left: 70px;" class="button_wrap">
-				<div id= "loginButton"><img  src="andrewadd/fbbtn.png"/></div></div>
+				<div id= "loginButton"><img class= "loginButton" src="andrewadd/fbbtn.png"/></div></div>
 				</a>
 			</div>
 			<div class="span3" id="logo">
@@ -432,7 +432,7 @@
 		
 			if (response.status === 'connected') {
 				
-				//å¦‚æžœå·²ç¶“æŽˆæ¬Šè€Œä¸”ç™»å…¥ï¼Œé‚£å°±ç›´æŽ¥æŠŠ#loginButtonæ”¹æˆlogoutç‹€æ…‹
+			
 				uid = response.authResponse.userID;
 				accessToken = response.authResponse.accessToken;
 				
@@ -440,6 +440,8 @@
 				 $('#lbutton_wrap').remove();
 				    $('.nav_login').remove();
 				    $('#apiIcon').remove();
+				    $('#loginButton').remove();
+				    $('.loginButton').remove();
 				    $('.login_ornot').text("最新收藏");
 
 			      FB.api('/me', function(response){
@@ -493,20 +495,24 @@
 					//$("#loginButton").removeClass('btn-primary').addClass('btn-inverse');
 					
 					//var userName;
-					$('#loginButton').remove();
+					$('#lbutton_wrap').remove();
 				    $('.nav_login').remove();
+				    $('#apiIcon').remove();
+				    $('#loginButton').remove();
+				    $('.loginButton').remove();
 				    $('.login_ornot').text("最新收藏");
 
-				
-					FB.api('/me', function(response){
+			      FB.api('/me', function(response){
 
 			    	 var fId = response.id;
 		             var fName = response.name;
 		         
-		             
-		             $(".nav_log_container").append("<div style=' margin-top: 30px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/><span style= 'margin-left: 20px; font-size: 20px; text-decoration: none;'>"+fName+"</span></a></div>");
+		              $(".nav_log_container").append("<div style=' margin-left: 10px; margin-top: 40px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/><span style= 'margin-left: 20px; font-size: 20px; text-decoration: none;'>"+fName+"</span></a></div>");
                     
-                    
+
+		              $("#pic1").append("<a href='personPage.html'><img src='andrewadd/f1.png'/></a>");
+		              $("#pic2").append("<a href='personPage.html'><img src='andrewadd/f2.png'/></a>");
+		              $("#pic3").append("<a href='personPage.html'><img src='andrewadd/f3.png'/></a>");
                     
                     //<a href='personPage.html'> </a>
                     //<img src='https://graph.facebook.com/"+ fId + "/picture' />
@@ -536,22 +542,24 @@
 					//$("#loginButton").removeClass('btn-primary').addClass('btn-inverse');
 					
 					//var userName;
-					$('#loginButton').remove();
+					$('#lbutton_wrap').remove();
 				    $('.nav_login').remove();
+				    $('#apiIcon').remove();
+				    $('#loginButton').remove();
+				    $('.loginButton').remove();
 				    $('.login_ornot').text("最新收藏");
 
-				
-					FB.api('/me', function(response){
+			      FB.api('/me', function(response){
 
 			    	 var fId = response.id;
 		             var fName = response.name;
 		         
-		             
-		             //$(".nav_log_container").append("<a href='personPage.html'></a>");
-                     $(".nav_log_container").append("<div style=' margin-top: 30px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/><span style= 'margin-left: 20px; font-size: 20px; text-decoration: none;'>"+fName+"</span></a></div>");
+		              $(".nav_log_container").append("<div style=' margin-left: 10px; margin-top: 40px;'><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/><span style= 'margin-left: 20px; font-size: 20px; text-decoration: none;'>"+fName+"</span></a></div>");
                     
-                    
-                    
+
+		              $("#pic1").append("<a href='personPage.html'><img src='andrewadd/f1.png'/></a>");
+		              $("#pic2").append("<a href='personPage.html'><img src='andrewadd/f2.png'/></a>");
+		              $("#pic3").append("<a href='personPage.html'><img src='andrewadd/f3.png'/></a>");
                     //
                     //<a href='personPage.html'> </a>
                     //<img src='https://graph.facebook.com/"+ fId + "/picture' />
