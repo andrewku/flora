@@ -429,15 +429,14 @@
 				accessToken = response.authResponse.accessToken;
 				
 				console.log("ok1");
-				$('#loginButton').remove();
+				 $('#loginButton').remove();
+				    $('.nav_login').remove();
 
 			      FB.api('/me', function(response){
 
 			    	 var fId = response.id;
 		             var fName = response.name;
-		                
-                    $("<div><img src='https://graph.facebook.com/"+ fId +"/picture'/>
-                    	<span>"+fName+"</span></div>").appendTo('.nav_log_container')
+		         
 
                     //<a href='personPage.html'> </a>
 
@@ -477,6 +476,7 @@
 					//});
 				    console.log("ok2");
 				    $('#loginButton').remove();
+				    $('.nav_login').remove();
 
 				    /*FB.api('/me', function(response){
 
@@ -517,7 +517,8 @@
 					//	userName = response.name;
 					//	$('#welcome').html("Welcome! " + userName);
 					//});
-				      $('#loginButton').remove();
+				       $('#loginButton').remove();
+				       $('.nav_login').remove();
 
 				     /*FB.api('/me', function(response){
 
