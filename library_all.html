@@ -272,7 +272,7 @@
       <!--modal-->
         <div>
             <div id="1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div style="z-index:1;"class="modal-body"><img src="浮出頁/f1.png"><div style="position:absolute;  z-index: 10; bottom:127px; left:250px;"class="fb-like" data-href="http://andrewku.github.io/flora/library_all.html" data-send="false" data-width="250" data-show-faces="false"></div></div>
+                <div style="z-index:1;"class="modal-body"><div class="fb-like" data-href="https://github.com/andrewku/flora/tree/gh-pages/%E5%80%8B%E4%BA%BA%E6%9C%83%E5%93%A1/flowerinstagram" data-send="false" data-width="100" data-show-faces="false"></div><img src="浮出頁/f1.png"></div>
             </div>
             <div id="2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div style="z-index:1;"class="modal-body"><img src="浮出頁/f2.png"><div style="position:absolute;  z-index: 10; bottom:125px; left:275px;"class="fb-like" data-href="http://andrewku.github.io/flora/library_all.html" data-send="false" data-width="250" data-show-faces="false"></div></div>
@@ -307,7 +307,27 @@
         </div>
 	</div>
 	<script type="text/javascript">
-         
+         window.fbAsyncInit = function() {
+                  // init the FB JS SDK
+                 FB.init({
+                 appId      : ' 610168672335954',                        // App ID from the app dashboard
+                 //channelUrl : 'http://andrewku.github.io/FB/Assignment4_blank.html', // Channel file for x-domain comms
+                 status     : true,                                 // Check Facebook Login status
+                 xfbml      : true                                  // Look for social plugins on the page
+                });
+
+                // Additional initialization code such as adding Event Listeners goes here
+                };
+
+             // Load the SDK asynchronously
+           (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=610168672335954";
+            fjs.parentNode.insertBefore(js, fjs);
+             }(document, 'script', 'facebook-jssdk'));
+
 		FB.getLoginStatus(function(response) {
 		
 			if (response.status === 'connected') {
