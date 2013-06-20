@@ -5,15 +5,14 @@
 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Telex|Varela' rel='stylesheet' type='text/css'>
  
     <script src="js/jquery-1.9.1.min.js"></script> 
     <script src="js/bootstrap.min.js"></script> 
 
     <script type="text/javascript"
                 src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
-				
     </script>
-	<script src="js/fb_login.js"></script>
     <style type="text/css">
       .navbar{
  		background-color: white; /* background color will be black for all browsers */
@@ -56,6 +55,8 @@
       	height: 1000px;
       }
       .personInfo{
+        color: white;
+        font-family : 'Varela', sans-serif;
       	padding-left: 450px;
       	padding-top: 20px;
       }
@@ -108,10 +109,10 @@
               </li>
               <li class="empty_button"></li>
             </ul>
-            <div class="nav_log_container"style="display: inline-block;">
-              <a  class="nav_login"> <!--href="personPage.html"-->
-               <img src="首頁元件/NavBarLogin/NavLogin.png" title="" alt=""></a>
-            </div>
+            <div style="display: inline-block;">
+              <a href="personPage.html" class="nav_login">
+              	<img src="首頁元件/NavBarLogin/NavLogin.png" title="" alt=""></a>
+            <div>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -119,8 +120,8 @@
 
     <div class="webbody">
     	<div class="personInfo">
-		<img src="個人會員/user.png">
-    		<p>Hi! I love to collect flowers and red flower is my favorite.<br>
+    		<h3>Andrew Ku</h3>
+    		<p>Hi, I am Andrew! I love to collect flowers and red flower is my favorite.<br>
     		   If you also like to take photos of flowers, please let me know.<br>
     		   We can share our photoshoots together and have lots of fun! 
     		</p>
@@ -260,14 +261,6 @@
                $(this).attr("src","首頁元件/流程圖Button/InsButton5.png");
             }
         );
-	FB.api('/me', function(response) {
-    console.log(response);
-    var myName = response.name;
-    var myId=response.id;
-	 $("<div onclick='changeInfo("+fId+");'><span>"+myName "</span></div>").appendTo(".personInfo");
-  });
-  
-  
 	</script>
  </body>
  </html>
