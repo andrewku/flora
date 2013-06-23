@@ -59,12 +59,12 @@
 					 {
 						console.log("inside personPage.html");
 						
-						$(".personInfo").append("<img align=left width=200px src='https://graph.facebook.com/"+ fId + "/picture'/>");
-						$(".personInfo").append("<div style=' margin-left: 70px; margin-top: 20px; width=270px; '><span style= 'margin-left: 20px; font-size: 20px; text-decoration: none;'>"+fName+"</span></a></div>");
+						//$(".personInfo").append("<img align=left width=200px src='https://graph.facebook.com/"+ fId + "/picture'/>");
+						//$(".personInfo").append("<div style=' margin-left: 70px; margin-top: 20px; width=270px; '><span style= 'margin-left: 20px; font-size: 20px; text-decoration: none;'>"+fName+"</span></a></div>");
                     		
 					 }
-					 else
-					 {
+					 
+					 
 						  $(".empty_button").append("<div style='width:250px; display: inline-block; margin-left: 20px; margin-top: 40px; '><a href='personPage.html'><img src='https://graph.facebook.com/"+ fId + "/picture'/><span style= 'margin-left: 20px; font-size: 20px; text-decoration: none; '>"+fName+"</span></a></div>");
 						
 
@@ -75,7 +75,7 @@
 						//<a href='personPage.html'> </a>
 						//<img src='https://graph.facebook.com/"+ fId + "/picture' />
 
-					  }
+					  
 						  });
 					  
                    
