@@ -49,6 +49,7 @@
       }
       .flower_wall{
       	padding-bottom: 40px;
+      	padding-top: 30px;
       }
       .flower_block{
       	padding-top: 10px;
@@ -122,7 +123,7 @@
       .tag{
       	padding-left: 25px;
       	padding-bottom: 20px;
-      	padding-top: 25px;
+      	padding-top: 15px;
       }
     </style>
     <script type="text/javascript">
@@ -135,10 +136,9 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=610168672335954";
+  js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=319885051477318";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<script src="js/fb_login.js"></script> 
 	<!--nav bar-->
 	<div class="navbar container"> <!--"navbar-fixed-top"-->
       <div class="navbar-inner">
@@ -174,39 +174,27 @@
 			<div class="span3">
 				<div id="catalog">
 					<a href="library_all.html" class="catalog_all"><img src="花庫元件/左Button/rightbutton_all.png" title="" alt="" class="catalog_all"></a>
-					<a href="library_season.html" class="catalog_season"><img src="花庫元件/左Button/rightbutton_season_h.png" title="" alt="" class="catalog_season"></a>
-					<a href="library_like.html" class="catalog_like"><img src="花庫元件/左Button/rightbutton_like.png" title="" alt="" class="catalog_like"></a>	
+					<a href="library_season.html" class="catalog_season"><img src="花庫元件/左Button/rightbutton_season.png" title="" alt="" class="catalog_season"></a>
+					<a href="library_like.html" class="catalog_like"><img src="花庫元件/左Button/rightbutton_like_h.png" title="" alt="" class="catalog_like"></a>	
 				</div>
 			</div>
 			<!--body-->
 			<div class="span9" style="margin-left: 27px;">
-				<div id="all"></div>
-				<div id="season">
-					<div class="season_list">
-						<ul>
-	              			<li class="season1">
-	              				<a href="#spring"><img src="花庫元件/季節Button/seasonicon1.png"></a>
-	              			</li>
-		              		<li class="season2">
-		              			<a href="#summer"><img src="花庫元件/季節Button/seasonicon2.png"></a>
-		              		</li>
-		              		<li class="season3">
-		              			<a href="#fall"><img src="花庫元件/季節Button/seasonicon3.png"></a>
-		              		</li>
-		              		<li class="season4">
-		              			<a href="#winter"><img src="花庫元件/季節Button/seasonicon4.png"></a>
-		              		</li>
-		            	</ul>
-		            </div>
-		            <div class="flower_wall">
-		            	<div id="spring" class="row-fluid">
-		            		<div class="tag span12">
-		            			<img src="花庫元件/season_tag/season_tag1.png">
+				<div id="like">
+					<div class="flower_wall row-fluid">
+							<div class="tag span12">
+		            			<img src="花庫元件/頁面Tag/tag_most_like.png">
 		            		</div>
-				            <div class="span3 flower_block">
-		    					<a href="#1" data-toggle="modal"><img src="個人會員/flowerinstagram/17.png"></a>
+							<div class="span3 flower_block" style="margin-left: 20px;">
+		    					<a href="" data-toggle="modal"><img src="個人會員/flowerinstagram/1.png"></a>
 		    					<div class="caption">
-									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">大葉烏心石</div>
+									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">聖誕紅</div>
+								</div>
+							</div>
+		            		<div class="span3 flower_block">
+		    					<a href="#2" data-toggle="modal"><img src="個人會員/flowerinstagram/21.png"></a>
+		    					<div class="caption">
+									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">桂花</div>
 								</div>
 							</div>
 							<div class="span3 flower_block">
@@ -214,6 +202,12 @@
 		    					<div class="caption">
 									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">金蓮花</div>
 								</div>
+							</div>
+							<div class="span3 flower_block" style="margin-left: 20px;">
+		    					<a href="#1" data-toggle="modal"><img src="個人會員/flowerinstagram/17.png"></a>
+		    					<div class="caption">
+									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">大葉烏心石</div>
+							</div>
 							</div>
 							<div class="span3 flower_block">
 		    					<a href="#8" data-toggle="modal"><img src="個人會員/flowerinstagram/14.png"></a>
@@ -234,102 +228,47 @@
 								</div>
 							</div>
 							<div class="span3 flower_block">
-		    					<img src="個人會員/flowerinstagram/7.png">
-		    					<div class="caption">
-									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">四季秋海棠</div>
-								</div>
-							</div>
-						</div>
-						<div id="summer" class="row-fluid">
-		            		<div class="tag span12"><img src="花庫元件/season_tag/season_tag2.png"></div>
-				            <div class="span3 flower_block">
-		    					<a href="#2" data-toggle="modal"><img src="個人會員/flowerinstagram/21.png"></a>
-		    					<div class="caption">
-									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">桂花</div>
-								</div>
-							</div>
-							<div class="span3 flower_block">
-		    					<a href="#3" data-toggle="modal"><img src="個人會員/flowerinstagram/20.png"></a>
-		    					<div class="caption">
-									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">朱槿</div>
-								</div>
-							</div>
-							<div class="span3 flower_block">
-		    					<a href="#7" data-toggle="modal"><img src="個人會員/flowerinstagram/15.png"></a>
-		    					<div class="caption">
-									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">九重葛</div>
-								</div>
-							</div>
-							<div class="span3 flower_block">
 		    					<a href="#9" data-toggle="modal"><img src="個人會員/flowerinstagram/13.png"></a>
 		    					<div class="caption">
 									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">鳳凰木</div>
 								</div>
 							</div>
 							<div class="span3 flower_block">
-		    					<a href="#11" data-toggle="modal"><img src="個人會員/flowerinstagram/11.png"></a>
+		    					<img src="個人會員/flowerinstagram/7.png">
 		    					<div class="caption">
-									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">使君子</div>
+									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">四季秋海棠</div>
 								</div>
 							</div>
-						</div>
-						<div id="fall" class="row-fluid">
-		            		<div class="tag span12"><img src="花庫元件/season_tag/season_tag3.png"></div>
-				            <div class="span3 flower_block">
-		    					<a href="#7" data-toggle="modal"><img src="個人會員/flowerinstagram/15.png"></a>
-		    					<div class="caption">
-									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">九重葛</div>
-								</div>
-							</div>
-							<div class="span3 flower_block">
-		    					<a href="#1" data-toggle="modal"><img src="個人會員/flowerinstagram/17.png"></a>
-		    					<div class="caption">
-									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">大葉烏心石</div>
-								</div>
-							</div>
-							<div class="span3 flower_block">
-		    					<a href="#2" data-toggle="modal"><img src="個人會員/flowerinstagram/21.png"></a>
-		    					<div class="caption">
-									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">桂花</div>
-								</div>
-							</div>
+				            
 							<div class="span3 flower_block">
 		    					<a href="#3" data-toggle="modal"><img src="個人會員/flowerinstagram/20.png"></a>
 		    					<div class="caption">
 									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">朱槿</div>
 								</div>
 							</div>
-						</div>
-						<div id="winter" class="row-fluid">
-		            		<div class="tag span12"><img src="花庫元件/season_tag/season_tag4.png"></div>
-				            <div class="span3 flower_block">
-		    					<a href="#6" data-toggle="modal"><img src="個人會員/flowerinstagram/16.png"></a>
-		    					<div class="caption">
-									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">洋紫荊</div>
-								</div>
-							</div>
-							<div class="span3 flower_block">
-		    					<a href="#1" data-toggle="modal"><img src="個人會員/flowerinstagram/17.png"></a>
-		    					<div class="caption">
-									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">大葉烏心石</div>
-								</div>
-							</div>
 							<div class="span3 flower_block">
 		    					<a href="#7" data-toggle="modal"><img src="個人會員/flowerinstagram/15.png"></a>
 		    					<div class="caption">
 									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">九重葛</div>
 								</div>
 							</div>
+							
 							<div class="span3 flower_block">
-		    					<a href="#2" data-toggle="modal"><img src="個人會員/flowerinstagram/21.png"></a>
+		    					<a href="#11" data-toggle="modal"><img src="個人會員/flowerinstagram/11.png"></a>
 		    					<div class="caption">
-									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">桂花</div>
+									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">使君子</div>
 								</div>
 							</div>
-						</div>
+				            <div class="span3 flower_block">
+		    					<a href="#6" data-toggle="modal"><img src="個人會員/flowerinstagram/16.png"></a>
+		    					<div class="caption">
+									<div title="" style="font-size:18px; margin-top: 8px; float:right; display: inline-block; opacity: 1;">洋紫荊</div>
+								</div>
+							</div>	
 					</div>
-	            </div>
-	            <div id="like"></div>
+				</div>
+				<div id="season"></div>
+	            <div id="all"></div>
 	        </div>
 	        <!--modal-->
 <div>

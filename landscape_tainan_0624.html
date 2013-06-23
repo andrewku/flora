@@ -101,7 +101,7 @@
         position: relative;
         top: -480px;
       }
-      #map-canvas{
+    #map-canvas{
         position: relative;
         width: 780px;
         height: 520px;
@@ -118,13 +118,13 @@
         function initialize() {
           var mapOptions = {
             zoom: 16,
-            center: new google.maps.LatLng(24.2082, 120.5963),
+            center: new google.maps.LatLng(22.9713, 120.2235),
             mapTypeId: google.maps.MapTypeId.ROADMAP
           };
           map = new google.maps.Map(document.getElementById('map-canvas'),
               mapOptions);
           var image = '';
-          var myLatLng = new google.maps.LatLng(24.2062, 120.5963);
+          var myLatLng = new google.maps.LatLng(22.9733, 120.2235);
           var beachMarker = new google.maps.Marker({
               position: myLatLng,
               map: map,
@@ -137,7 +137,6 @@
   </script>
 </head>
 <body>
-<script src="js/fb_login.js"></script> 
   <!--nav bar-->
   <div class="navbar container"> <!--"navbar-fixed-top"-->
       <div class="navbar-inner">
@@ -173,15 +172,15 @@
       <div class="span3">
         <div id="catalog">
           <a href="landscape_taipei.html" class="catalog_all"><img src="花庫元件/北中南_button/taiwanbutton_1_1.png" title="" alt="" class="catalog_all"></a>
-          <a href="landscape_taichung.html" class="catalog_season"><img src="花庫元件/北中南_button/taiwanbutton_2_2.png" title="" alt="" class="catalog_season"></a>
-          <a href="landscape_tainan.html" class="catalog_like"><img src="花庫元件/北中南_button/taiwanbutton_3_1.png" title="" alt="" class="catalog_like"></a>  
+          <a href="landscape_taichung.html" class="catalog_season"><img src="花庫元件/北中南_button/taiwanbutton_2_1.png" title="" alt="" class="catalog_season"></a>
+          <a href="landscape_tainan.html" class="catalog_like"><img src="花庫元件/北中南_button/taiwanbutton_3_2.png" title="" alt="" class="catalog_like"></a>  
         </div>
       </div>
       <!--body-->
       <div class="span9" style="margin-left: 27px;">
         <div class="row-fluid">
           <div class="tag span12">
-                  <img src="花庫元件/頁面Tag/tag_taichungpark.png">
+                  <img src="花庫元件/頁面Tag/tag_tainanpark.png">
                 </div>
                 <div class="span12">
                   <div id="map-canvas"></div>
