@@ -48,7 +48,7 @@
 				    $('#apiIcon').remove();
 				    $('#loginButton').remove();
 				    $('.loginButton').remove();
-				    $('.login_ornot').text("³Ì·s¦¬ÂÃ");
+				    $('.login_ornot').text("æœ€æ–°æ”¶è—");
 
 			      FB.api('/me', function(response){
 
@@ -98,7 +98,7 @@
 				    $('#apiIcon').remove();
 				    $('#loginButton').remove();
 				    $('.loginButton').remove();
-				    $('.login_ornot').text("³Ì·s¦¬ÂÃ");
+				    $('.login_ornot').text("æœ€æ–°æ”¶è—");
 
 			      FB.api('/me', function(response){
 
@@ -125,7 +125,7 @@
 				   } else {
 					 
 					 //a??c¡¨¡Le£á¡Ka?¡¦c£g¡Ec??a¡K¢Di??buttona¡M£áa¡L¢Ga?¡Âlogin
-					alert("µn¤J¦P®É±ÂÅv¤~¯à¦¬ÂÃªá¦·³á¡I");
+					alert("ç™»å…¥åŒæ™‚æˆæ¬Šæ‰å¯ä»¥æ”¶è—èŠ±æœµå–”!");
 					 
 				   }
 				 });
